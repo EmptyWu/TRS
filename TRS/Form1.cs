@@ -19,7 +19,9 @@ namespace TRS
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            tss.Text = "123";
+            
+            var data = new TRSLib.DataBase(new TRSLib.DatabaseConfig());
+            data.Setup();
         }
     }
 }
